@@ -1,0 +1,37 @@
+.footer {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(135, 135, 135);
+}
+.footer__legal {
+  margin: 5em;
+  color: rgb(64, 64, 64);
+  text-transform: uppercase;
+  font-size: 0.9em;
+  justify-content: center;
+}
+.footer__legal--item {
+  display: block;
+  max-width: 300px;
+  padding: 0 2em;
+  border-right: 1px solid rgba(154, 154, 154, 0.442);
+}
+.footer__legal--item:last-child {
+  border: none;
+}
+.footer__lisence {
+  margin: 2em 0;
+}
+.footer__lisence--img {
+  margin: 0 1em;
+  width: 120px;
+  height: 45px;
+}
+.footer__address {
+  margin: 4em;
+  font-size: small;
+}
+.footer__address div {
+  line-height: 1.8em;
+}

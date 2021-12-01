@@ -1,0 +1,41 @@
+@import "./reset.css";
+@import "./header.css";
+@import "./banner.css";
+@import "./wrapper/section.css";
+@import "./wrapper/product.css";
+@import "./footer.css";
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: var(--nav-height);
+  z-index: 999;
+
+  font-size: smaller;
+  background: linear-gradient(-180deg, #f53d2d, #f63);
+}
+#wrapper {
+  margin-top: calc(var(--nav-height) + 2em);
+  padding-bottom: 4em;
+  background-color: #f5f5f5;
+  color: var(--text-color-content);
+  border-bottom: 6px solid var(--primary-color);
+}
+#footer {
+  color: black;
+  background-color: #fbfbfb;
+}
+
+.category__item,
+.banner__title--item,
+.banner__container,
+.click__section,
+.sale__item,
+.product__list--item,
+.header__cart,
+.nav-spot {
+  cursor: pointer;
+}

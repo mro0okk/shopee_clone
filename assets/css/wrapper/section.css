@@ -1,0 +1,99 @@
+@import "./product.css";
+
+.click__section,
+.product,
+.sale,
+.category {
+  margin-top: var(--gutter-row);
+  background-color: var(--text-color);
+}
+.category__list {
+  flex-wrap: wrap;
+}
+.category__title {
+  padding: 21.5px 20px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  color: var(--text-color-content);
+  text-transform: uppercase;
+}
+.category__item {
+  width: 119px;
+  height: 150px;
+
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.category__item > img {
+  width: 83px;
+  height: 88.0333px;
+}
+.category__item:hover {
+  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 0.8125rem 0 rgba(0, 0, 0, 0.05);
+}
+.sale {
+  justify-content: space-evenly;
+}
+.sale__item {
+  width: 200px;
+  height: 100%;
+  padding: 0.65em;
+  text-align: center;
+  z-index: 10;
+}
+.sale__item--product {
+  width: 173px;
+  height: 173px;
+  background: url(../../image/sale_item/makeup.png) no-repeat center/contain;
+}
+.sale__item--info {
+  color: var(--primary-color);
+  font-size: x-large;
+  text-transform: lowercase;
+}
+.sale__item--onload {
+  position: relative;
+  width: 100%;
+  text-transform: uppercase;
+  line-height: 19px;
+  font-size: smaller;
+  color: #fff;
+  background: url(../../image/sale_item/onload.png) center/cover;
+}
+.sale__item--onload__to {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  width: 60%;
+  height: 18px;
+  border-bottom-right-radius: 20%;
+  background-color: #ffbea682;
+}
+.tab {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  flex: 0 0 auto;
+
+  padding: 0.9375rem 2.875rem;
+  height: 3.75rem;
+
+  text-transform: uppercase;
+  line-height: 45px;
+  color: var(--primary-color);
+
+  font-size: 1rem;
+  font-weight: 500;
+}
+.tab > img {
+  width: 160px;
+  height: 20px;
+}
+.tab.active {
+  border-bottom: 3px solid var(--primary-color);
+}
